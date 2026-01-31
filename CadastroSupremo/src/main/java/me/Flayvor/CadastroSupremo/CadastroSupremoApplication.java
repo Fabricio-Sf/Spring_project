@@ -8,6 +8,7 @@ public class CadastroSupremoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CadastroSupremoApplication.class, args);
+		
 	}
 
 }
