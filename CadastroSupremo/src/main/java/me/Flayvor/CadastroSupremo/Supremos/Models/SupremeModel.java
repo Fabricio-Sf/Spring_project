@@ -1,10 +1,14 @@
-package me.Flayvor.CadastroSupremo.Models;
+package me.Flayvor.CadastroSupremo.Supremos.Models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+//import java.util.List;
+import me.Flayvor.CadastroSupremo.Missoes.Models.missoesSupremas;
 
 @Entity
 @Table(name = "tb_Cadastro_de_Supremos")
@@ -15,8 +19,13 @@ public class SupremeModel {
     private Long id;
     private String nome;
     private String email;
-    private String senha;
     private int poder;
+    private String senha;
+    //private List<missoesSupremas> missoes;
+
+    @ManyToOne
+    @JoinColumn(name = "missoes_id")
+    private missoesSupremas missoes;
 
     // Non-args constructor
     public SupremeModel() {

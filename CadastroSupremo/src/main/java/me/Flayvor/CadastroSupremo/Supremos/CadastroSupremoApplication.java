@@ -1,4 +1,4 @@
-package me.Flayvor.CadastroSupremo;
+package me.Flayvor.CadastroSupremo.Supremos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
