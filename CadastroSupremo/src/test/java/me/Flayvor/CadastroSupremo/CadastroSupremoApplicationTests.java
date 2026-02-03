@@ -8,6 +8,8 @@ class CadastroSupremoApplicationTests {
 
 	@Test
 	void contextLoads() {
-	}
+
+
+    }
 
 }
