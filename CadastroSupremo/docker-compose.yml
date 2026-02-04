@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_api_cadastro
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: cadastro_db
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
